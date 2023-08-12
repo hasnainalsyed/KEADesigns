@@ -1,0 +1,64 @@
+
+
+:root {
+  --bs-body-font-family: 'Montserrat', sans-serif;
+  --bs-heading-font-family: 'Poppins', sans-serif;
+  --color_black: #221f1f;
+  --color_black--rgb: 34, 31, 31;
+  --color_gold: #d49668;
+  --color_gold--rgb: 212, 150, 104;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--bs-heading-font-family);
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+/*=====================================
+  Navbar Style Start
+=====================================*/
+.navbar {
+  background-color: var(--color_black);
+}
+
+.navbar .navbar-nav {
+  --bs-nav-link-font-weight: 400;
+  --bs-nav-link-color: rgba(var(--color_gold--rgb), 0.75);
+  --bs-nav-link-hover-color: var(--color_gold);
+  --bs-navbar-active-color: var(--color_gold);
+}
+
+.navbar .navbar-brand .navbar-logo {
+  max-height: 40px;
+}
+
+.navbar .nav-link {
+  --bs-nav-link-font-size: 14px;
+  --bs-nav-link-font-weight: 400;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link:hover {
+  
+}
+
+.navbar .dropdown-item {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  --bs-dropdown-link-active-bg: rgba(var(--color_gold--rgb), 0.5);
+  color: var(--color_black);
+}
+
+/*=====================================
+  Navbar Style End
+=====================================*/
