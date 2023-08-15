@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty('--header-height', document.getElementById('site-header').offsetHeight + 'px');

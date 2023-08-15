@@ -6,7 +6,9 @@
   --color_black: #221f1f;
   --color_black--rgb: 34, 31, 31;
   --color_gold: #d49668;
+  --color_goldLight: #D49668;
   --color_gold--rgb: 212, 150, 104;
+  --color_white: #ffffff;
 }
 
 body {
@@ -22,6 +24,32 @@ h1, h2, h3, h4, h5, h6,
   font-style: normal;
 }
 
+.btn {
+  font-family: var(--bs-body-font-family);
+  font-weight: normal;
+  line-height: 1;
+}
+
+.btn-gold-border {
+  color: var(--color_white);
+  padding: 0.95rem 2.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--color_gold);
+}
+
+.btn-gold-border:hover {
+  background-color: var(--color_goldLight);
+  color: var(--color_white);
+  border-color: rgba(var(--color_gold--rgb), 1);
+  box-shadow: inset 6.5em 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn-gold-border:focus,
+.btn-gold-border:active {
+  background-color: var(--color_goldLight);
+  --bs-btn-active-color: var(--color_white);
+  --bs-btn-active-border-color: rgba(var(--color_gold--rgb), 1);
+}
 
 /*=====================================
   Navbar Style Start
@@ -57,4 +85,36 @@ h1, h2, h3, h4, h5, h6,
 
 /*=====================================
   Navbar Style End
+=====================================*/
+/*!==========================================================================*/
+/*=====================================
+  Hero Section Style Start
+=====================================*/
+.hero {
+  background-image: url('../img/fr.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - var(--header-height));
+  z-index: 1;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--color_black--rgb), 0.5);
+  z-index: -1;
+}
+
+.contact-form {
+  border: 2px solid var(--color_gold);
+  padding: 40px 60px;
+  background-color: rgba(var(--color_gold--rgb), 0.5);
+}
+
+/*=====================================
+  Hero Section Style End
 =====================================*/
