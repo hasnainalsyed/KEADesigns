@@ -124,10 +124,41 @@ h1, h2, h3, h4, h5, h6,
 =====================================*/
 /*!==========================================================================*/
 /*=====================================
-  Who We Are Section Start
+  Our Services Section Start
 =====================================*/
 
+.our-services {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+}
+
+.our-services-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  max-width: calc(100% / 3);
+  border: none;
+  box-shadow: 0 0 20px rgba(var(--color_black--rgb), 0.15);
+}
+
+.swiper-slide .card-link {
+  color: var(--color_gold);
+  text-decoration: none;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid var(--color_gold);
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--color_gold);
+}
 
 /*=====================================
-  Who We Are Section End
+  Our Services Section End
 =====================================*/
