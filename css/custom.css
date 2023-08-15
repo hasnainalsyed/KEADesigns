@@ -162,3 +162,61 @@ h1, h2, h3, h4, h5, h6,
 /*=====================================
   Our Services Section End
 =====================================*/
+/*!==========================================================================*/
+/*=====================================
+  Logos Section End
+=====================================*/
+.marquee {
+  --space: 1rem;
+  --duration: 1s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+.marquee__group .logo {
+  max-width: 150px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee--borders {
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/*=====================================
+  Logos Section End
+=====================================*/
+
