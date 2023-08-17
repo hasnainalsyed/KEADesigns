@@ -27,6 +27,13 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--bs-body-font-family);
   font-weight: normal;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn .bi {
+  margin-right: 5px;
 }
 
 .btn-gold-border {
@@ -48,6 +55,27 @@ h1, h2, h3, h4, h5, h6,
   background-color: var(--color_goldLight);
   --bs-btn-active-color: var(--color_white);
   --bs-btn-active-border-color: rgba(var(--color_gold--rgb), 1);
+}
+
+.btn-white-border {
+  color: var(--color_white);
+  padding: 0.95rem 2.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--color_white);
+}
+
+.btn-white-border:hover {
+  color: var(--color_black);
+  background-color: var(--color_white);
+  border-color: rgba(var(--color_white--rgb), 1);
+  box-shadow: inset 6.5em 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn-white-border:focus,
+.btn-white-border:active {
+  background-color: var(--color_black);
+  --bs-btn-active-color: var(--color_white);
+  --bs-btn-active-border-color: rgba(var(--color_black--rgb), 1);
 }
 
 .color-black {
@@ -346,3 +374,17 @@ h1, h2, h3, h4, h5, h6,
 /*=====================================
   Testimonials Section End
 =====================================*/
+/*!==========================================================================*/
+/*=====================================
+  Brochure Section Start
+=====================================*/
+
+.brochure {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  padding: 100px 0;
+}
+
+/*=====================================
+  Brochure Section End
+=====================================*/
+/*!==========================================================================*/

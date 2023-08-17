@@ -22,8 +22,5 @@ let testimonialsSlider__swiper = new Swiper("[testimonials-slider]", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 1,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  loop: true
 });
