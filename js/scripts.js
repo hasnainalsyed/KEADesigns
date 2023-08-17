@@ -1,6 +1,6 @@
 document.documentElement.style.setProperty('--header-height', document.getElementById('site-header').offsetHeight + 'px');
 
-let swiper = new Swiper("[our-services-swiper]", {
+let ourServices__swiper = new Swiper("[our-services-swiper]", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
@@ -13,6 +13,16 @@ let swiper = new Swiper("[our-services-swiper]", {
     modifier: 1,
     slideShadows: true,
   },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+let testimonialsSlider__swiper = new Swiper("[testimonials-slider]", {
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
