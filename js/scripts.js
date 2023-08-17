@@ -24,3 +24,15 @@ let testimonialsSlider__swiper = new Swiper("[testimonials-slider]", {
   slidesPerView: 1,
   loop: true
 });
+
+const panoramaImage = new PANOLENS.ImagePanorama("img/image1.jpeg");
+const imageContainer = document.querySelector("[data-image-container-one]");
+
+const viewer = new PANOLENS.Viewer({
+  container: imageContainer,
+  autoRotate: true,
+  autoRotateSpeed: 0.5,
+  controlBar: false
+});
+
+viewer.add(panoramaImage);

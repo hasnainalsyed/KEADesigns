@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6,
   Logos Section End
 =====================================*/
 .marquee {
-  --space: 1rem;
+  --space: 5rem;
   --duration: 1s;
   --gap: var(--space);
 
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .marquee__group .logo {
-  max-width: 150px;
+  max-width: 200px;
 }
 
 @media (prefers-reduced-motion: reduce) {
